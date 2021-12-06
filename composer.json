@@ -1,0 +1,41 @@
+{
+    "name": "alfa-dev-team/abstractapi-geo",
+    "description": "A description for abstractapi-geo.",
+    "type": "package",
+    "license": "MIT",
+    "keywords": [
+        "laravel"
+    ],
+    "authors": [
+        {
+            "name": "Gritsay Andriy",
+            "email": "gritsayandriy@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlfaDevTeam\\AbstractapiGeo\\": "./src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AlfaDevTeam\\AbstractapiGeo\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AlfaDevTeam\\AbstractapiGeo\\AbstractapiGeoServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0"
+    }
+}
