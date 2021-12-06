@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Services;
+namespace AlfaDevTeam\AbstractapiGeo\Services;
 
-use App\Models\LocationLog;
+use AlfaDeTeam\AbstractapiGeo\Models\LocationLog;
 use Illuminate\Support\Facades\Http;
 
 class Location
