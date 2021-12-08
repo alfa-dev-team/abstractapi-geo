@@ -18,12 +18,12 @@
     },
     "autoload": {
         "psr-4": {
-            "AlfaDevTeam\\AbstractapiGeo\\": "./src"
+            "AlfaDevTeam\\AbstractapiGeo\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "AlfaDevTeam\\AbstractapiGeo\\Tests\\": "tests"
+            "AlfaDevTeam\\AbstractapiGeo\\Tests\\": "tests/"
         }
     },
     "scripts": {

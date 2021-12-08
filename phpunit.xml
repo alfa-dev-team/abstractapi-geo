@@ -2,26 +2,35 @@
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
          colors="true"
+         bootstrap="vendor/autoload.php"
+         verbose="true"
 >
     <testsuites>
-        <testsuite name="alfa-dev-team/abstractapi-geo Test Suite">
-            <directory>tests</directory>
+        <testsuite name="Unit">
+            <directory suffix="Test.php">./tests/Unit</directory>
         </testsuite>
     </testsuites>
     <coverage processUncoveredFiles="true">
         <include>
-            <directory suffix=".php">./app</directory>
+            <directory suffix=".php">src/</directory>
         </include>
     </coverage>
     <php>
+        <env name="APP_KEY" value="base64:2fl+Ktvkfl+Fuz4Qp/A75G2RTiWVA/ZoKZvp6fiiM10="/>
         <server name="APP_ENV" value="testing"/>
         <server name="BCRYPT_ROUNDS" value="4"/>
-        <server name="CACHE_DRIVER" value="array"/>
+        <env name="DB_CONNECTION" value="mysql"/>
+        <env name="DB_HOST" value="127.0.0.1"/>
+        <env name="DB_PORT" value="3306"/>
+        <env name="DB_DATABASE" value="auth-api-test"/>
+        <env name="DB_USERNAME" value="root"/>
+        <env name="DB_PASSWORD" value="root"/>
+<!--        <server name="CACHE_DRIVER" value="array"/>-->
         <!-- <server name="DB_CONNECTION" value="sqlite"/> -->
         <!-- <server name="DB_DATABASE" value=":memory:"/> -->
-        <server name="MAIL_MAILER" value="array"/>
-        <server name="QUEUE_CONNECTION" value="sync"/>
-        <server name="SESSION_DRIVER" value="array"/>
-        <server name="TELESCOPE_ENABLED" value="false"/>
+<!--        <server name="MAIL_MAILER" value="array"/>-->
+<!--        <server name="QUEUE_CONNECTION" value="sync"/>-->
+<!--        <server name="SESSION_DRIVER" value="array"/>-->
+<!--        <server name="TELESCOPE_ENABLED" value="false"/>-->
     </php>
 </phpunit>

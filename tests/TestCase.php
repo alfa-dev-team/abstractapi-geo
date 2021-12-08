@@ -2,31 +2,17 @@
 
 namespace AlfaDevTeam\AbstractapiGeo\Tests;
 
+use Illuminate\Foundation\Testing\RefreshDatabase;
+
 class TestCase extends \Orchestra\Testbench\TestCase
 {
-    /**
-     * Get package providers.
-     *
-     * @param  \Illuminate\Foundation\Application  $app
-     *
-     * @return array
-     */
+    use RefreshDatabase;
+
     protected function getPackageProviders($app)
     {
         return [
+            AbstractapiGeoTestServiceProvider::class,
             \AlfaDevTeam\AbstractapiGeo\AbstractapiGeoServiceProvider::class,
         ];
-    }
-
-    /**
-     * Define environment setup.
-     *
-     * @param  \Illuminate\Foundation\Application   $app
-     *
-     * @return void
-     */
-    protected function getEnvironmentSetUp($app)
-    {
-        //
     }
 }
