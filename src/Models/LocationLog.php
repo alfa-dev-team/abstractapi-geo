@@ -1,6 +1,6 @@
 <?php
 
-namespace AlfaDeTeam\AbstractapiGeo\Models;
+namespace AlfaDevTeam\AbstractapiGeo\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

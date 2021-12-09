@@ -2,7 +2,7 @@
 
 namespace AlfaDevTeam\AbstractapiGeo\Services;
 
-use AlfaDeTeam\AbstractapiGeo\Models\LocationLog;
+use AlfaDevTeam\AbstractapiGeo\Models\LocationLog;
 use Illuminate\Support\Facades\Http;
 
 class Location
