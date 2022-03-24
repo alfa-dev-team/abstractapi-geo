@@ -24,6 +24,14 @@ class Location
         return $this->locationData->city ?? null;
     }
 
+    public function getСoordinates()
+    {
+        return [
+            'lon' => $this->locationData->longitude,
+            'lat' => $this->locationData->latitude,
+        ];
+    }
+
     protected function sendRequest($ip)
     {
         $apiKey = config('services.abstractapi.ip_geolocation.api_key');
