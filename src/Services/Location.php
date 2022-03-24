@@ -48,12 +48,10 @@ class Location
 
     private function __construct(){}
 
-    public function saveToDb($userId)
+    public function saveToDb($attributes)
     {
-        LocationLog::create([
-            'user_id' => $userId,
-            'response' => json_encode($this->locationData),
-        ]);
+        $attributes['response'] = json_encode($this->locationData);
+        LocationLog::create($attributes);
         return $this;
     }
 }
