@@ -5,7 +5,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/alfa-dev-team/abstractapi-geo.svg?style=flat-square)](https://packagist.org/packages/alfa-dev-team/abstractapi-geo)
 
 ## Install
-`composer require alfa-dev-team/abstractapi-geo:^0.2.x-dev`<br>
+`composer require alfa-dev-team/abstractapi-geo`<br>
 
 `php artisan vendor:publish --provider="AlfaDevTeam\AbstractapiGeo\AbstractapiGeoServiceProvider" --tag="migrations"`
 ## Usage
